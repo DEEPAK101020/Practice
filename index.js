@@ -82,16 +82,47 @@
 //     console.log(arguments)
 // }
 // fun(1,2,3)
-function outerFunction() {
-    let outerVariable = 'I am outer!';
+// function outerFunction() {
+//     let outerVariable = 'I am outer!';
     
-    function innerFunction() {
-        console.log(outerVariable);
-    }
+//     function innerFunction() {
+//         console.log(outerVariable);
+//     }
     
-    return innerFunction;
-}
+//     return innerFunction;
+// }
 
-let closure = outerFunction();
-closure(); // Output: I am outer!
+// let closure = outerFunction();
+// closure(); // Output: I am outer!
 
+ let arr=[1,2,3,4,5,6];
+// let res=[]
+// for(let i=0;i<arr.length;i++){
+//     if(arr[i]%2==0){
+//         res.push(arr[i]);
+//     }
+// }
+
+let res=arr.filter((ele)=>{
+    return ele%2==0;
+ })
+ console.log(res);
+
+
+// Create a Promise
+// let myPromise = new Promise((resolve, reject) => {
+   
+//     setTimeout(() => {
+       
+//         resolve("Data fetched successfully!");
+    
+//     }, 2000); // Simulate a delay of 2 seconds
+// });
+
+// myPromise.then((data) => {
+//     console.log(data);
+// }).catch((error) => {
+//     console.log(error);
+// });
+
+// 0 undefined null false NaN ""   falsy values
