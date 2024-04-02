@@ -46,10 +46,52 @@
 
 // fun();//undefined
 
-//rest spread
-function sum(...nums){ //...nums is rest
-console.log(nums)
+// //rest spread
+// function sum(...nums){ //...nums is rest
+// console.log(nums)
 
+// }
+// var arr=[5,6];
+// sum(...arr)//here it is called spread 
+
+
+// let str = "deepak kumar";
+
+// rev=''
+// for(let i=str.length-1;i>=0;i--){
+//     rev +=str.charAt(i);
+// }
+// console.log(rev)
+
+// let str = "deepak kumar";
+// let reversedStr = str.split('').reverse().join('');
+// console.log(reversedStr);
+
+
+// process.next
+// Promise
+// setImidiate
+// setInterval
+
+
+//  function fun(){
+//    console.log(arguments)
+// }
+//  fun(1,2,3)
+// let fun=()=>{
+//     console.log(arguments)
+// }
+// fun(1,2,3)
+function outerFunction() {
+    let outerVariable = 'I am outer!';
+    
+    function innerFunction() {
+        console.log(outerVariable);
+    }
+    
+    return innerFunction;
 }
-var arr=[5,6];
-sum(...arr)//her it is called spread 
+
+let closure = outerFunction();
+closure(); // Output: I am outer!
+
