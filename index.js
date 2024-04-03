@@ -106,6 +106,7 @@
 let res=arr.filter((ele)=>{
     return ele%2==0;
  })
+ 
  console.log(res);
 
 
