@@ -103,11 +103,11 @@
 //     }
 // }
 
-let res=arr.filter((ele)=>{
-    return ele%2==0;
- })
+// let res=arr.filter((ele)=>{
+//     return ele%2==0;
+//  })
  
- console.log(res);
+//  console.log(res);
 
 
 // Create a Promise
@@ -126,4 +126,141 @@ let res=arr.filter((ele)=>{
 //     console.log(error);
 // });
 
-// 0 undefined null false NaN ""   falsy values
+//  0 undefined null false NaN ""   falsy values
+
+
+//  let str = "Deepak This is a good day";
+
+//   function reverseString(str) {
+//       let reversed = '';
+//       let word = '';
+
+//       for (let i = str.length - 1; i >= 0; i--) {
+//           if (str[i] !== ' ') {
+//               word = str[i] + word;
+//           } else {
+//               reversed += word + ' ';
+//               word = '';
+//           }
+//       }
+//       reversed += word;
+
+//       return reversed;
+//   }
+
+//  console.log(reverseString(str));
+//  let inputString="This is a good day";
+//  function reverseString(str){
+//      let res=inputString.split(' ').reverse().join(' ');
+//      return res
+//  }
+
+//  console.log(reverseString(inputString));
+
+//using inbuilt function
+// function replaceWord(sentence) {
+//     sentence = sentence.replace(/\bHunting\b/g, "xyz");
+//     sentence = sentence.replace(/\bHunt\b/g, "123"); 
+//     return sentence;
+// }
+
+// let input = "Hunt in Hunting";
+// let replacedSentence = replaceWord(input);
+// console.log(replacedSentence); 
+
+// function replaceWords(sentence) {
+//     let words = sentence.split(" ");
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i] === "Hunt") {
+//             words[i] = "123";
+//         } else if (words[i] === "Hunting") {
+//             words[i] = "xyz";
+//         }
+//     }
+//     return words.join(" ");
+// }
+
+// let input = "Hunt in Hunting";
+// let replacedSentence = replaceWords(input);
+// console.log(replacedSentence); 
+
+// function Split(sentence, delimiter) {
+//     let result = [];
+//     let word = '';
+//     for (let i = 0; i < sentence.length; i++) {
+//         if (sentence[i] !== delimiter) {
+//             word += sentence[i];
+//         } else {
+//             result.push(word);
+//             word = '';
+//         }
+//     }
+//     if (word !== '') {
+//         result.push(word);
+//     }
+//     return result;
+// }
+
+// function replaceWords(sentence) {
+//     let words = Split(sentence, ' ');
+//     for (let i = 0; i < words.length; i++) {
+//         if (words[i] === "Hunt") {
+//             words[i] = "123";
+//         } else if (words[i] === "Hunting") {
+//             words[i] = "xyz";
+//         }
+//     }
+//     return words.join(" ");
+// }
+
+// let input = "Hunt in Hunting";
+// let replacedSentence = replaceWords(input);
+// console.log(replacedSentence); 
+// function foo(x) {
+//     if(x>0){
+//         return Math.abs(x);
+//     }else{
+
+//         return  x;
+//     }
+// }
+
+// // Test cases
+// console.log(foo(foo(10))); // Output: -10
+// console.log(foo(foo(-5))); // Output: 5
+
+// function foo(x) {
+//     if(x>0){
+//         return Math.abs(x)
+
+//     }
+    
+//  }
+//  function foo(x) {
+//      let original=x;
+//      let ans=Math.abs(x);
+//      if(original==ans){
+//           return -ans;
+//      }else{
+
+//          return -ans;
+//      }
+//  }
+  function foo(x) {
+      let original=x;
+      let ans=-Math.abs(x);
+      if(original==ans){
+           return -original;
+      }else{
+
+          return original;
+      }
+  }
+
+
+// Test cases
+//  console.log(foo(foo(10)));  // Output: -10
+
+ console.log(foo(foo(-5)));  // Output: 5
+
+
