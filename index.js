@@ -95,7 +95,7 @@
 // let closure = outerFunction();
 // closure(); // Output: I am outer!
 
- let arr=[1,2,3,4,5,6];
+//  let arr=[1,2,3,4,5,6];
 // let res=[]
 // for(let i=0;i<arr.length;i++){
 //     if(arr[i]%2==0){
@@ -265,16 +265,40 @@
 //  console.log(foo(foo(-5)));
 //  console.log(funcount)  // Output: 5
 
-const http=require('http');
-const server=http.createServer((req,res)=>{
+// const http=require('http');
+// const server=http.createServer((req,res)=>{
   
 
 
-  res.readableEnded("hello world")
-})
+//   res.readableEnded("hello world")
+// })
 
-const port =3000;
-server.prependOnceListener(port,()=>{
-  console.log("server is running")
-})
+// const port =3000;
+// server.prependOnceListener(port,()=>{
+//   console.log("server is running")
+// })
 
+// console.log(x);
+
+// let x=10;
+
+// const array = [1, 2, 3, 4, 5,6];
+// const slicedArray = array.slice(1, 4);
+
+// console.log(slicedArray); // [2, 3, 4]
+// console.log(array);       // [1, 2, 3, 4, 5] (original array remains unchanged)
+
+var a=0;
+var b=0;
+function curriedAdd(x) {
+  return function(y) {
+    a=x;
+    b=y;
+      return x + y;
+  };
+}
+
+// Usage
+const add5 = curriedAdd(5); // Create a specialized function that adds 5 to its argument
+console.log(add5(3)); // Output: 8
+console.log(a,b)
