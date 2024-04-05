@@ -246,21 +246,35 @@
 //          return -ans;
 //      }
 //  }
-  function foo(x) {
-      let original=x;
-      let ans=-Math.abs(x);
-      if(original==ans){
-           return -original;
-      }else{
+// let funcount=0;
+//   function foo(x) {
+//     if(x>0){
+//       return -x
+      
+//     }else{
+//       return x;
+      
+//     }
+//     funcount++;
+//   }
 
-          return original;
-      }
-  }
+
+// // Test cases
+// //  console.log(foo(foo(10)));  // Output: -10
+
+//  console.log(foo(foo(-5)));
+//  console.log(funcount)  // Output: 5
+
+const http=require('http');
+const server=http.createServer((req,res)=>{
+  
 
 
-// Test cases
-//  console.log(foo(foo(10)));  // Output: -10
+  res.readableEnded("hello world")
+})
 
- console.log(foo(foo(-5)));  // Output: 5
-
+const port =3000;
+server.prependOnceListener(port,()=>{
+  console.log("server is running")
+})
 
