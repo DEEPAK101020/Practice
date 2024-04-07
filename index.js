@@ -265,18 +265,18 @@
 //  console.log(foo(foo(-5)));
 //  console.log(funcount)  // Output: 5
 
-// const http=require('http');
-// const server=http.createServer((req,res)=>{
+ const http=require('http');
+ const server=http.createServer((req,res)=>{
   
 
 
-//   res.readableEnded("hello world")
-// })
+   res.end("hello world")
+ })
 
-// const port =3000;
-// server.prependOnceListener(port,()=>{
-//   console.log("server is running")
-// })
+ const port =3000;
+ server.listen(port,()=>{
+   console.log("server is running")
+ })
 
 // console.log(x);
 
@@ -288,17 +288,31 @@
 // console.log(slicedArray); // [2, 3, 4]
 // console.log(array);       // [1, 2, 3, 4, 5] (original array remains unchanged)
 
-var a=0;
-var b=0;
-function curriedAdd(x) {
-  return function(y) {
-    a=x;
-    b=y;
-      return x + y;
-  };
-}
+// function add(x,y){
+//   return x+y;
+// }
+// var a=0;
+// var b=0;
+// function curriedAdd(x) {
+//   return function(y) {
+//     a=x;
+//     b=y;
+//       return x + y;
+//   };
+// }
 
-// Usage
-const add5 = curriedAdd(5); // Create a specialized function that adds 5 to its argument
-console.log(add5(3)); // Output: 8
-console.log(a,b)
+// // Usage
+// const add5 = curriedAdd(5); // Create a specialized function that adds 5 to its argument
+// console.log(add5(3)); // Output: 8
+// console.log(a,b)
+// dhdh
+
+// function fun(a,b){
+//   return a*b;
+// }
+
+let result=function (a,b){
+  return a*b;
+}
+console.log(fun(5,10));
+
