@@ -305,7 +305,7 @@
 // const add5 = curriedAdd(5); // Create a specialized function that adds 5 to its argument
 // console.log(add5(3)); // Output: 8
 // console.log(a,b)
-// dhdh
+
 
 // function fun(a,b){
 //   return a*b;
