@@ -8,3 +8,10 @@ var Person =function(pName){
     
     var person =new Person("Neelesh");
     console.log(person.getName());
+
+    let str = "hello world";
+
+
+str = str.replace(/l/g, 'o');
+
+console.log(str); // Output: "heooo worod"
