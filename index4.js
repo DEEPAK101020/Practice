@@ -117,6 +117,7 @@
     
  return acc+data1;
    },0)
+   
    console.log(totalAmount)
 const axios=require("axios");
 const { promises } = require("dns");
