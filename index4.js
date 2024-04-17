@@ -119,6 +119,8 @@
    },0)
    
    console.log(totalAmount)
+
+   
 const axios=require("axios");
 const { promises } = require("dns");
 async function fetch(){
